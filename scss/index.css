@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "YoungSerif";
+  src: url(../fonts/YoungSerif-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: YoungSerif;
+  color: black;
+  background: #e4c9a8;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav {
+  height: 12vh;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+header nav .logo img {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav .nav-search {
+  display: block;
+  margin: auto;
+}/*# sourceMappingURL=index.css.map */
