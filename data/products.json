@@ -1,61 +1,60 @@
-export const products = [
-  {
-    id: 1,
-    title: "Lunettes de vue Polo Ralph Lauren",
-    date: "18 Janvier 2023",
-    price: 139,
-    ref: "PH2233 5958 CRISTAL GRIS",
-    infos:
+[{
+    "id": 1,
+    "title": "Lunettes de vue Polo Ralph Lauren",
+    "date": "18 Janvier 2023",
+    "price": 139,
+    "ref": "PH2233 5958 CRISTAL GRIS",
+    "infos":
       "Sortez de l'ordinaire et choisissez cette monture de la marque Polo Ralph Lauren. Sa forme pantos sublime tous les visages et sort de l'ordinaire grâce à sa transparence qui, en plus de s'accorder à toutes vos tenues, laisse ressortir vos traits de visage pour ne pas vous cacher.",
-    img: "./img/lunette1.webp",
+    "img": "./img/lunette1.webp"
   },
   {
-    id: 2,
-    title: "Lunettes de vue Guess",
-    date: "7 février 2023",
-    price: 125,
-    ref: "GU2869 071 BORDEAUX",
-    infos:
+    "id": 2,
+    "title": "Lunettes de vue Guess",
+    "date": "7 février 2023",
+    "price": 125,
+    "ref": "GU2869 071 BORDEAUX",
+    "infos":
       "Une paire GUESS simple, élégante et intemporelle. Sa monture fine en métal ainsi que sa couleur or blanc associée au bordeaux lui permettront de s'accorder avec tous vos styles, pour toutes celles qui cherchent une paire facile à porter au quotidien.",
-    img: "./img/lunette2.webp",
+    "img": "./img/lunette2.webp"
   },
   {
-    id: 3,
-    title: "Lunettes de vue Ray-Banp",
-    date: "4 Mars 2023",
-    prices: 104,
-    ref: "RX5393 2012 LEONARD",
-    infos:
+    "id": 3,
+    "title": "Lunettes de vue Ray-Banp",
+    "date": "4 Mars 2023",
+    "price": 104,
+    "ref": "RX5393 2012 LEONARD",
+    "infos":
       "Si vous aimez les classiques qui fonctionnent en toutes circonstances vous devez adopter les yeux fermés cette paire de lunettes de vue RAY-BAN. Ce modèle carré sublime en écaille foncé adoucit le regard et se révèle être un véritable atout pour vos tenues, tout en vous assurant un confort optimal.",
-    img: "./img/lunette3.webp",
+    "img": "./img/lunette3.webp"
   },
   {
-    id: 4,
-    title: "Lunettes de vue Zadig & Voltaire",
-    date: "25 Juin 2023",
-    prices: 159,
-    ref: "ZG8974 214 Zadig",
-    infos:
+    "id": 4,
+    "title": "Lunettes de vue Zadig & Voltaire",
+    "date": "25 Juin 2023",
+    "price": 159,
+    "ref": "ZG8974 214 Zadig",
+    "infos":
       "Un modèle ZADIG&VOLTAIRE d'inspiration vintage, avec sa forme pilote, emblématique des années 1970 ! Cette paire imposante conviendrait à merveille aux femmes recherchant une paire de caractère, adoucie par la couleur dorée et sa monture fine en métal.",
-    img: "./img/lunette4.webp",
+    "img": "./img/lunette4.webp"
   },
   {
-    id: 5,
-    title: "Lunettes de vue Gucci",
-    date: "30 Mars 2023",
-    prices: 229,
-    ref: "GG1003O 001 NOIR BRILLANT",
-    infos:
+    "id": 5,
+    "title": "Lunettes de vue Gucci",
+    "date": "30 Mars 2023",
+    "price": 229,
+    "ref": "GG1003O 001 NOIR BRILLANT",
+    "infos":
       "Une monture Gucci imposante, à la fois intemporelle par sa couleur noir au fini brillant et tendance par sa forme. Cette paire saura parfaitement convenir à celles qui recherchent une paire qui sort de l'ordinaire mais à la fois classique, donnant un style unique à toutes vos tenues !",
-    img: "./img/lunette5.webp",
+    "img": "./img/lunette5.webp"
   },
   {
-    id: 6,
-    title: "Lunettes de vue Boss",
-    date: "23 Juillet 2023",
-    prices: 195,
-    ref: "BOSS0679/N 08A NOIR DEGRADE",
-    infos: "Monture rectangle noir dégradé",
-    img: "./img/lunette6.webp",
-  },
-];
+    "id": 6,
+    "title": "Lunettes de vue Boss",
+    "date": "23 Juillet 2023",
+    "price": 195,
+    "ref": "BOSS0679/N 08A NOIR DEGRADE",
+    "infos": "Monture rectangle noir dégradé",
+    "img": "./img/lunette6.webp"
+  }
+]

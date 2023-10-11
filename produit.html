@@ -19,9 +19,24 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="nav-search">
-          <input type="text" />
+          <input
+            type="text"
+            placeholder="Rechercher un produit"
+            id="inputSearch"
+          />
         </div>
       </nav>
     </header>
+    <section class="filter-container">
+      <div class="range-container">
+        <input type="range" value="4" max="6" id="inputRange" />
+        <span id="rangeValue">4</span>
+      </div>
+      <button class="btnSort" id="minToMax">Tri croissant</button>
+      <button class="btnSort" id="maxToMin">Tri décroissant</button>
+      <button class="btnSort" id="alpha">Tri Alphabétique</button>
+    </section>
+    <section class="product-container"></section>
+    <script src="./js/index.js"></script>
   </body>
 </html>
