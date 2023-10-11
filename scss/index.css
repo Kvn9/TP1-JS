@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "YoungSerif";
   src: url(../fonts/YoungSerif-Regular.ttf);
@@ -23,8 +24,68 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  color: white;
+}
+
+.footer-description {
+  color: white;
+}
+
+.texts {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+text:nth-child(odd) {
+  transform: skew(60deg, -30deg);
+}
+
+text:nth-child(even) {
+  transform: skew(0deg, -30deg) scaleY(1.5);
+}
+
+text:nth-child(1) {
+  left: -50px;
+}
+
+text:nth-child(2) {
+  top: 10px;
+  left: -15px;
+}
+
+text:nth-child(3) {
+  top: 19px;
+  left: 20px;
+}
+
+text:nth-child(4) {
+  top: 29px;
+  left: 55px;
+}
+
+text:nth-child(5) {
+  top: 38px;
+  left: 90px;
+}
+
+.tiktok {
+  transition: 0.5 ease-in-out;
+  animation: climbing 1s linear infinite;
+}
+
+@keyframes climbing {
+  100% {
+    transform: translate(0, -40px);
+  }
+}
 header nav {
-  height: 12vh;
   display: grid;
   grid-template-columns: 30% 40% 30%;
   align-items: center;
@@ -45,4 +106,192 @@ header nav ul {
 header nav .nav-search {
   display: block;
   margin: auto;
+}
+
+footer {
+  background: url(/img/bg-footer.jpg) center/cover;
+  text-align: left;
+  padding: 65px 32px;
+}
+@media screen and (max-width: 680px) {
+  footer {
+    background: none;
+  }
+}
+footer .footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+footer .footer-content .left-part {
+  padding-right: 30px;
+  line-height: 30px;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .left-part {
+    display: none;
+  }
+}
+footer .footer-content .left-part h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+footer .footer-content .left-part p {
+  font-size: 0.9rem;
+}
+footer .footer-content .right-part {
+  padding-left: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part {
+    padding-left: 20px;
+  }
+}
+footer .footer-content .right-part h3 {
+  font-size: 0.85rem;
+}
+footer .footer-content .right-part input {
+  margin-top: 15px;
+  background: none;
+  border: 1px solid rgba(166, 114, 69, 0.151);
+  padding: 7px 13px;
+  width: 250px;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part input {
+    width: 150px;
+  }
+}
+footer .footer-content .right-part .follow-us {
+  display: flex;
+  margin-top: 50px;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part .follow-us h3 {
+    display: none;
+  }
+}
+footer .footer-content .right-part .follow-us ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #595956;
+  font-size: 0.8rem;
+  width: 200px;
+  cursor: pointer;
+}
+footer .footer-content .right-part .follow-us ul i {
+  transition: 0.2s;
+}
+footer .footer-content .right-part .follow-us ul i:hover {
+  transform: scale(1.5);
+}
+
+/* Couleurs */
+.contact-card {
+  background-color: #f5f5dc;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contact-card h2 {
+  color: #808080;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.contact-card form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #808080;
+  font-weight: bold;
+}
+.contact-card form input[type=text],
+.contact-card form input[type=email],
+.contact-card form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #808080;
+  border-radius: 3px;
+  background-color: white;
+}
+.contact-card form textarea {
+  height: 150px;
+}
+.contact-card form button[type=submit] {
+  background-color: #808080;
+  color: #f5f5dc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-card form button[type=submit]:hover {
+  background-color: #676767;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.image-carousel {
+  max-width: 70%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-img {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  transition: opacity 0.5s; /* Animation de transition d'opacité */
+}
+
+.carousel-img:hover {
+  opacity: 0.7; /* Opacité réduite au survol de la souris */
+}
+
+.description {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+
+.text-description {
+  text-align: justify;
+  font-size: 18px;
+  padding: 20px;
+}
+
+h1 {
+  padding: 20px 0;
+}
+
+.btn-en-savoir-plus {
+  display: inline-block;
+  background-color: rgb(37, 34, 34);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px; /* Augmentez la marge pour un meilleur espacement */
 }/*# sourceMappingURL=index.css.map */
