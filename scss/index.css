@@ -23,6 +23,14 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  color: white;
+}
+
+.footer-description {
+  color: white;
+}
+
 header nav {
   display: grid;
   grid-template-columns: 30% 40% 30%;
@@ -205,4 +213,50 @@ footer .footer-content .right-part .follow-us ul i {
 }
 footer .footer-content .right-part .follow-us ul i:hover {
   transform: scale(1.5);
+}
+
+/* Couleurs */
+.contact-card {
+  background-color: #f5f5dc;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contact-card h2 {
+  color: #808080;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.contact-card form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #808080;
+  font-weight: bold;
+}
+.contact-card form input[type=text],
+.contact-card form input[type=email],
+.contact-card form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #808080;
+  border-radius: 3px;
+  background-color: white;
+}
+.contact-card form textarea {
+  height: 150px;
+}
+.contact-card form button[type=submit] {
+  background-color: #808080;
+  color: #f5f5dc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-card form button[type=submit]:hover {
+  background-color: #676767;
 }/*# sourceMappingURL=index.css.map */
