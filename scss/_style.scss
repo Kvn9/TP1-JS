@@ -4,7 +4,7 @@
 }
 
 $font1: YoungSerif;
-$color1: #E4C9A8;
+$color1: #e4c9a8;
 
 @mixin alignChildren($space) {
   display: flex;
@@ -28,9 +28,9 @@ body {
   background: $color1;
 }
 
-a{
-    color: black;
-    text-decoration: none;
+a {
+  color: black;
+  text-decoration: none;
 }
 
 h2 {

@@ -1,0 +1,26 @@
+.form-inscription-container {
+  margin: 0 auto;
+  width: 80%;
+  label,
+  input {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+  input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+
+  input[type="submit"] {
+    margin: 20px auto;
+    padding: 5px 30px;
+    transition: 0.2s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}

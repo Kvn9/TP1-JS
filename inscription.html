@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <title>OptiPrime - Produits</title>
+    <title>OptiPrime - Inscription</title>
   </head>
   <body>
     <header>
@@ -24,24 +24,21 @@
           <li><a href="#">Connexion</a></li>
         </ul>
         <div class="nav-search">
-          <input
-            type="text"
-            placeholder="Rechercher un produit"
-            id="inputSearch"
-          />
+          <input type="text" placeholder="Recherche" />
         </div>
       </nav>
     </header>
-    <section class="filter-container">
-      <div class="range-container">
-        <input type="range" value="4" max="6" id="inputRange" />
-        <span id="rangeValue">4</span>
-      </div>
-      <button class="btnSort" id="minToMax">Tri croissant</button>
-      <button class="btnSort" id="maxToMin">Tri décroissant</button>
-      <button class="btnSort" id="alpha">Tri Alphabétique</button>
+    <section class="form-inscription-container">
+      <form action="inscription.php" method="post">
+        <label for="nom">Nom: </label>
+        <input type="text" name="nom" placeholder="Dupont" />
+        <label for="prenom">Prénom: </label>
+        <input type="text" name="prenom" placeholder="Pierre" />
+        <label for="motdepasse">Mot de passe: </label>
+        <input type="password" name="motdepasse" />
+        <input type="submit" value="Envoyer">
+      </form>
     </section>
-    <section class="product-container"></section>
     <footer>
       <div class="footer-content">
         <div class="left-part">
@@ -69,6 +66,5 @@
         </div>
       </div>
     </footer>
-    <script src="./js/index.js"></script>
   </body>
 </html>

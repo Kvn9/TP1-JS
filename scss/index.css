@@ -15,7 +15,7 @@ li {
 body {
   font-family: YoungSerif;
   color: black;
-  background: #E4C9A8;
+  background: #e4c9a8;
 }
 
 a {
@@ -94,6 +94,31 @@ header nav .nav-search input {
 }
 .filter-container .btnSort:hover {
   cursor: pointer;
+}
+
+.form-inscription-container {
+  margin: 0 auto;
+  width: 80%;
+}
+.form-inscription-container label,
+.form-inscription-container input {
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+.form-inscription-container input {
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.form-inscription-container input[type=submit] {
+  margin: 20px auto;
+  padding: 5px 30px;
+  transition: 0.2s;
+}
+.form-inscription-container input[type=submit]:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .product-container {
