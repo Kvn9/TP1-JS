@@ -7,6 +7,7 @@
     case 'ajout':
         require('../Models/utilisateur.php');
         
+        // Fonction Hachage de Mdp avec Bcrypt
         $hashed_password = password_hash($_POST['motdepasse'], PASSWORD_BCRYPT);
         if(mb_strlen($_POST['nom'], 'UTF-8') <=50 && mb_strlen($_POST['prenom'], 'UTF-8') <=50 && mb_strlen($hashed_password, 'UTF-8') <=200){
           add_user($hashed_password);

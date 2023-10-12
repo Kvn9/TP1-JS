@@ -3,12 +3,14 @@ const btnSort = document.querySelectorAll(".btnSort");
 
 let products = [];
 let sortMethod;
+// Appel au fichier JSON 
 const fetchproducts = async () => {
   await fetch("./data/products.json")
     .then((res) => res.json())
     .then((data) => (products = data));
 };
 
+// Fonction Filtre 
 const productsDisplay = async (sortMethod) => {
   await fetchproducts();
   productsContainer.innerHTML = products
@@ -22,6 +24,8 @@ const productsDisplay = async (sortMethod) => {
         return a.title.toString().localeCompare(b.title.toString());
     })
     .slice(0, inputRange.value)
+    
+    // Affichage des produits
     .map(
       (product) =>
         `
@@ -50,3 +54,4 @@ btnSort.forEach((btn) => {
   });
 });
 productsDisplay(sortMethod);
+

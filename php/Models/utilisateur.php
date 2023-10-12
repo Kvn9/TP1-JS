@@ -1,5 +1,5 @@
 <?php
-
+// Fonction insertion user avec le hashage de Mdp 
     function add_user($hashed_password){
         global $PDO;
         $req = "INSERT INTO utilisateur(nomuser, prenomuser, mdp) VALUES (:nom, :prenom, :mdp)";

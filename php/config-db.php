@@ -1,9 +1,9 @@
 <?php
-
+ // Connection BDD
     $DBDRIVER = 'mysql';
     $DBHOST = 'localhost';
-    $DBNAME = 'projet1ipssi';
-    $DBUSER = 'admin';
-    $DBPASSWORD = 123;
+    $DBNAME = 'test';
+    $DBUSER = 'root';
+    $DBPASSWORD = 'pass';
 
 ?>
