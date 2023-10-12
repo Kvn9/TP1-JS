@@ -20,8 +20,10 @@
     case 'connexion':
       require('../Models/utilisateur.php');
       $data = check_user();
+      if($_POST['motdepasse']==$data[0]['mdp']) $content_connexion = '<p>Connexion réussi</p>';
+      else $content_connexion = '<p>Connexion échoué</p>';
       require('../Views/utilisateur.php');
-      
+      break;
 
     default:
     header('Location:../../accueil.html');
