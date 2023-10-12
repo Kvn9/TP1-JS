@@ -5,14 +5,13 @@
   }
   switch($_GET['type']){
     case 'ajout':
-        $req = "INSERT INTO utilisateur(nomuser, prenomuser, mdp) VALUES (:nom, :prenom, :mdp)";
-        $stmt = $PDO->prepare($req);
-        $stmt->bindParam(':nom', $_POST['nom']);
-        $stmt->bindParam(':prenom', $_POST['prenom']);
-        $stmt->bindParam(':mdp', $_POST['motdepasse']);
-        $stmt->execute();
-        header('Location:../../inscription.html');
+        require('../Models/utilisateur.php');
+        if(add_user()) $content = "Félicitation vous êtes inscrit !";
+          else $content = "Il y a une erreur dans votre formulaire !";
+          require('../Views/utilisateur.php');
         break;
+    case 'connexion':
+
     default:
     header('Location:../../accueil.html');
 
