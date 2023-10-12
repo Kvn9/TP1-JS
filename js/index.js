@@ -47,6 +47,7 @@ inputRange.addEventListener("input", () => {
   productsDisplay(sortMethod);
 });
 
+// Appel du bon filtre par rapport au clic
 btnSort.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     sortMethod = e.target.id;
