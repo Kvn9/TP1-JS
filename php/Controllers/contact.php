@@ -8,7 +8,6 @@
   }
   switch($_GET['type']){
     case 'ajout':
-        echo "coucou";
         $req = "INSERT INTO contact(nomcontact, emailcontact, messagecontact) VALUES (:nom, :mail, :msg)";
         $stmt = $PDO->prepare($req);
         $stmt->bindParam(':nom', $_POST['nom']);

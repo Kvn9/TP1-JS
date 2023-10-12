@@ -203,7 +203,7 @@ header nav .nav-search input {
 }
 
 footer {
-  background: url(/img/bg-footer.jpg) center/cover;
+  background: url(../img/bg-footer.jpg) center/cover;
   text-align: left;
   padding: 65px 32px;
 }
@@ -236,6 +236,7 @@ footer .footer-content .left-part h2 {
   font-size: 2.5rem;
   font-weight: 100;
   margin-bottom: 15px;
+  color: white;
 }
 footer .footer-content .left-part p {
   font-size: 0.9rem;
@@ -251,6 +252,7 @@ footer .footer-content .right-part {
   }
 }
 footer .footer-content .right-part h3 {
+  color: white;
   font-size: 0.85rem;
 }
 footer .footer-content .right-part input {
@@ -286,6 +288,7 @@ footer .footer-content .right-part .follow-us ul {
 }
 footer .footer-content .right-part .follow-us ul i {
   transition: 0.2s;
+  color: white;
 }
 footer .footer-content .right-part .follow-us ul i:hover {
   transform: scale(1.5);
@@ -316,6 +319,7 @@ footer .footer-content .right-part .follow-us ul i:hover {
 
 .contact-form input[type=text],
 .contact-form input[type=email],
+.contact-form input[type=password],
 .contact-form textarea {
   width: 100%;
   padding: 10px;

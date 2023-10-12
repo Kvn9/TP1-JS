@@ -20,23 +20,24 @@
           <li><a href="accueil.html">Accueil</a></li>
           <li><a href="produit.html">Nos produits</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">Inscription</a></li>
-          <li><a href="#">Connexion</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+          <li><a href="connexion.html">Connexion</a></li>
         </ul>
         <div class="nav-search">
           <input type="text" placeholder="Recherche" />
         </div>
       </nav>
     </header>
-    <section class="form-inscription-container">
-      <form action="inscription.php" method="post">
+    <section class="contact-form">
+      <h2>Nous rejoindre</h2>
+      <form action="./php/Controllers/utilisateur.php?type=ajout" method="POST">
         <label for="nom">Nom: </label>
         <input type="text" name="nom" placeholder="Dupont" />
         <label for="prenom">Prénom: </label>
         <input type="text" name="prenom" placeholder="Pierre" />
         <label for="motdepasse">Mot de passe: </label>
         <input type="password" name="motdepasse" />
-        <input type="submit" value="Envoyer">
+        <button type="submit">Envoyer</button>
       </form>
     </section>
     <footer>
