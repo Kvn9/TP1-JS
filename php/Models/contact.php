@@ -1,9 +1,11 @@
 <?php
     function add_contact(){
         global $PDO;
-        $response = $PDO->prepare('SELECT * from utilisateur');
-        $response->execute();
-        $data = $response->fetchAll(PDO::FETCH_ASSOC);
-        return $data;
+        $req = "INSERT INTO contact(nomcontact, emailcontact, messagecontact) VALUES (:nom, :mail, :msg)";
+        $stmt = $PDO->prepare($req);
+        $stmt->bindParam(':nom', $_POST['nom']);
+        $stmt->bindParam(':mail', $_POST['email']);
+        $stmt->bindParam(':msg', $_POST['message']);
+        $stmt->execute();
     }
 ?>
