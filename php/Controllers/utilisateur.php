@@ -6,7 +6,7 @@
   switch($_GET['type']){
     case 'ajout':
         require('../Models/utilisateur.php');
-        
+
         // Fonction Hachage de Mdp avec Bcrypt
         $hashed_password = password_hash($_POST['motdepasse'], PASSWORD_BCRYPT);
         /* Check si les contraintes dans la bdd sont bien respectés par l'utilisateur */
@@ -18,6 +18,10 @@
           require('../Views/utilisateur.php');
         break;
     case 'connexion':
+      require('../Models/utilisateur.php');
+      $data = check_user();
+      require('../Views/utilisateur.php');
+      
 
     default:
     header('Location:../../accueil.html');

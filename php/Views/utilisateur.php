@@ -29,7 +29,7 @@
       </nav>
     </header>
     <section class="contact-form">
-      <h2>Nous rejoindre</h2>
+      <h2><?php ($content == '') ? ('Se connecter'):('Nous Rejoindre')  ?></h2>
       <form action="" method="POST">
         <label for="nom">Nom: </label>
         <input type="text" name="nom" placeholder="Dupont" />
@@ -38,7 +38,7 @@
         <label for="motdepasse">Mot de passe: </label>
         <input type="password" name="motdepasse" />
         <button type="submit">Envoyer</button>
-        <?php echo "$content" ?>
+        <?php ($content == '') ? (var_dump($data)):($content) ?>
       </form>
     </section>
     <footer>

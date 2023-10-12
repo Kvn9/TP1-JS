@@ -9,4 +9,15 @@
         $stmt->bindParam(':mdp', $hashed_password);
         $stmt->execute();
     }
+    //Fonction selet user pour la connexion 
+    function check_user(){
+        global $PDO;
+        $req = "SELECT mdp FROM utilisateur WHERE nomuser=:nom AND prenomuser=:prenom";
+        $stmt = $PDO->prepare($req);
+        $stmt->bindParam(':nom', $_POST['nom']);
+        $stmt->bindParam(':prenom', $_POST['prenom']);
+        $stmt->execute();
+        $data = $stmt->fetchall(PDO::FETCH_ASSOC);
+        return $data;
+    }
 ?>
