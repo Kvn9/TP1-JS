@@ -20,7 +20,9 @@
     case 'connexion':
       require('../Models/utilisateur.php');
       $data = check_user();
-      if($_POST['motdepasse']==$data[0]['mdp']) $content_connexion = '<p>Connexion réussi</p>';
+      if(isset($data[0]['mdp'])){
+        if(password_verify($_POST['motdepasse'],$data[0]['mdp'])) $content_connexion = '<p>Connexion réussi</p>';
+      }
       else $content_connexion = '<p>Connexion échoué</p>';
       require('../Views/utilisateur.php');
       break;
