@@ -17,11 +17,11 @@
           <img src="../../img/opti-prime.png" alt="logo optiprime" />
         </div>
         <ul class="nav-elements">
-          <li><a href="accueil.html">Accueil</a></li>
-          <li><a href="produit.html">Nos produits</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="inscription.html">Inscription</a></li>
-          <li><a href="connexion.html">Connexion</a></li>
+          <li><a href="../../accueil.html">Accueil</a></li>
+          <li><a href="../../produit.html">Nos produits</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../inscription.html">Inscription</a></li>
+          <li><a href="../../connexion.html">Connexion</a></li>
         </ul>
         <div class="nav-search">
           <input type="text" placeholder="Recherche" />
@@ -30,7 +30,7 @@
     </header>
     <section class="contact-form">
       <h2>Nous rejoindre</h2>
-      <form action="./php/Controllers/utilisateur.php?type=ajout" method="POST">
+      <form action="" method="POST">
         <label for="nom">Nom: </label>
         <input type="text" name="nom" placeholder="Dupont" />
         <label for="prenom">Prénom: </label>
@@ -38,7 +38,7 @@
         <label for="motdepasse">Mot de passe: </label>
         <input type="password" name="motdepasse" />
         <button type="submit">Envoyer</button>
-        <?php echo "<p>$content</p>" ?>
+        <?php echo "$content" ?>
       </form>
     </section>
     <footer>

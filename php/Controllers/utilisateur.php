@@ -6,8 +6,13 @@
   switch($_GET['type']){
     case 'ajout':
         require('../Models/utilisateur.php');
-        if(add_user()) $content = "Félicitation vous êtes inscrit !";
-          else $content = "Il y a une erreur dans votre formulaire !";
+        
+        $hashed_password = password_hash($_POST['motdepasse'], PASSWORD_BCRYPT);
+        if(mb_strlen($_POST['nom'], 'UTF-8') <=50 && mb_strlen($_POST['prenom'], 'UTF-8') <=50 && mb_strlen($hashed_password, 'UTF-8') <=200){
+          add_user($hashed_password);
+          $content = '<p id="success">Félicitation vous êtes inscrit !</p>';
+        }
+          else $content = '<p id="error">Vous avez une erreur dans votre formulaire</p>';
           require('../Views/utilisateur.php');
         break;
     case 'connexion':

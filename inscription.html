@@ -32,11 +32,11 @@
       <h2>Nous rejoindre</h2>
       <form action="./php/Controllers/utilisateur.php?type=ajout" method="POST">
         <label for="nom">Nom: </label>
-        <input type="text" name="nom" placeholder="Dupont" />
+        <input type="text" name="nom" placeholder="Dupont" required />
         <label for="prenom">Prénom: </label>
-        <input type="text" name="prenom" placeholder="Pierre" />
+        <input type="text" name="prenom" placeholder="Pierre" required />
         <label for="motdepasse">Mot de passe: </label>
-        <input type="password" name="motdepasse" />
+        <input type="password" name="motdepasse" required />
         <button type="submit">Envoyer</button>
       </form>
     </section>
